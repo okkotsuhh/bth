@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>happy birthday 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>" />
+</head>
+<body>
+  <div class="background"></div>
+  <div id="rain-container"></div>
+
+  <div class="cake-container">
+    <div class="plate"></div>
+    <div class="layer layer1"></div>
+    <div class="layer layer2"></div>
+    <div class="layer layer3"></div>
+    <div class="cream"></div>
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+  </div>
+
+  <div class="message">Happy Birthday Bouthaina ❤️</div>
+
+  <!-- صوت الخلفية -->
+  <audio id="birthday-audio" autoplay loop>
+    <source src="happy.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+
+  <!-- تقليل الصوت -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const audio = document.getElementById("birthday-audio");
+      if (audio) {
+        audio.volume = 0.1; // مستوى الصوت: 30%
+      }
+    });
+  </script>
+</body>
+</html>
